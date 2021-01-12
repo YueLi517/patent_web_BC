@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+  <servlet>
+    <servlet-name>create</servlet-name>
+    <servlet-class>servlet.Create</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>create</servlet-name>
+    <url-pattern>/create</url-pattern>
+  </servlet-mapping>
+
+	<display-name>JFreeChart_Demo</display-name>
+	<welcome-file-list>
+		<welcome-file>basic_table.jsp</welcome-file>
+		<welcome-file>basic_table.htm</welcome-file>
+		<welcome-file>basic_table.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>DisplayChart</servlet-name>
+		<servlet-class>org.jfree.chart.servlet.DisplayChart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisplayChart</servlet-name>
+		<url-pattern>/displayChart</url-pattern>
+	</servlet-mapping>
+</web-app>
